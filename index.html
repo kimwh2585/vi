@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>비비엔느</title>
+
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- nivo 슬라이더 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/nivo-slider.min.css">
+
+    <!-- owl 캐러셀 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+
+  
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <div class="top-bar con-min-width">
+        <div class="top-menu con row">
+            <nav class="menu-1 cell-right">
+                <ul class="row">
+                    <li class="cell"><a href="#">로그인</a></li>
+                    <li class="cell"><a href="#">회원가입</a></li>
+                    <li class="cell cell-my-shop-li"><a href="#">MY SHOP</a></li>
+                    <li class="cell"><a href="#">장바구니</a></li>
+                    <li class="cell"><a href="#">주문조회</a></li>
+                    <li class="cell"><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="main_wrap relative">
+
+        <div class="quick absolute">
+
+            <div><a href="#"><img src="img/naver_talktalk_p_prd_btn0.png" alt=""></a></div>
+
+            <div><a href="#"><img src="img/kakao_talk_btn2.png" alt=""></a></div>
+
+            <div class="bmk"><a href="#">Book Mark</a></div>
+
+            <ul class="quick_list relative">
+                <li>장바구니<a href="#"><span>0</span></a></li>
+                <li><a href="href">최근본상품</a></li>
+                <li class="view">
+                    <a href="#">
+                        <img src="img/498_shop1_929416.jpg" alt=""></a>
+                </li>
+            </ul>
+            <div class="quick-btns row">
+                <div class="quick-btn-prev cell"><a href="#"><i class="fas fa-angle-up"></i></a>
+                </div>
+                <div class="quick-btn-next cell">
+                    <a href="#"><i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+            <div class="quick-top">
+                <a href="#"><i class="fas fa-sort-up"></i>
+                    top</a>
+            </div>
+        </div>
+
+
+
+        <div class="menu-bar con">
+            <nav class="menu-1">
+                <ul class="row">
+                    <li class="cell"><a href="#">NOTICE</a></li>
+                    <li class="cell"><a href="#">EVENT</a></li>
+                    <li class="cell"><a href="#">REVIEW</a></li>
+                    <li class="cell"><a href="#">BLOGGER</a></li>
+                    <li class="cell"><a href="#">PR</a></li>
+                    <li class="cell"><a href="#">FAQ</a></li>
+                    <li class="cell"><a href="#">Q＆A</a></li>
+                </ul>
+            </nav>
+
+            <div class="logo cell">
+                <a href="#"><img src="img/logo.gif" alt=""></a>
+            </div>
+
+
+            <div class="search_box relative cell">
+                <input class="input absolute" type="search">
+                <input class="search absolute" type="image" src="img/btn_search.gif" alt="검색버튼">
+            </div>
+
+        </div>
+        <!--menu bar-->
+
+        <div class="menu-2-bar con text-align-center line-height-0-ch-only">
+            <nav class="menu-1 inline-block">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#">GIFT SET / PACKAGE</a>
+                        <ul>
+                            <li><a href="#">어버이날/스승의날</a></li>
+                            <li><a href="#">블랙스톤</a></li>
+                            <li><a href="#">골드라벨</a></li>
+                            <li><a href="#">블랙라벨</a></li>
+                            <li><a href="#">퀸즈라벨</a></li>
+                            <li><a href="#">프리미엄아로마</a></li>
+                            <li><a href="#">포장/카드</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">BLACK STONE</a>
+                        <ul>
+                            <li><a href="#">대용량디퓨저</a></li>
+                            <li><a href="#">디퓨저리필</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">선물세트/포장</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">GOLD LABEL</a>
+                        <ul>
+                            <li><a href="#">대용량디퓨저</a></li>
+                            <li><a href="#">디퓨저리필</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">선물세트/포장</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">BLACK LABEL</a>
+                        <ul>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">미니디퓨저</a></li>
+                            <li><a href="#">차량용디퓨저</a></li>
+                            <li><a href="#">디퓨저리필</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">선물세트/포장</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">QUEEN'S LABEL</a>
+                        <ul>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">미니디퓨저</a></li>
+                            <li><a href="#">차량용디퓨저</a></li>
+                            <li><a href="#">디퓨저리필</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">선물세트/포장</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">PREMIUM AROMA</a>
+                        <ul>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">미니디퓨저</a></li>
+                            <li><a href="#">차량용디퓨저</a></li>
+                            <li><a href="#">디퓨저리필</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">선물세트/포장</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">CAR DIFFUSER</a>
+                        <ul>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">미니디퓨저</a></li>
+                            <li><a href="#">차량용디퓨저</a></li>
+                            <li><a href="#">디퓨저리필</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">선물세트/포장</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">REFILL</a>
+                        <ul>
+                            <li><a href="#">블랙스톤</a></li>
+                            <li><a href="#">골드라벨</a></li>
+                            <li><a href="#">블랙라벨</a></li>
+                            <li><a href="#">퀸즈라벨</a></li>
+                            <li><a href="#">프리미엄아로마</a></li>
+                            <li><a href="#">스틱/용품</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">ACCESSORIES</a>
+                        <ul>
+                            <li><a href="#">탁상용받침대</a></li>
+                            <li><a href="#">벽걸이거치대</a></li>
+                            <li><a href="#">디퓨저조화</a></li>
+                            <li><a href="#">스틱/기타</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <div class="top-bn-bar con row">
+            <div class="cell">
+                <div class="img-box">
+                    <a href="#"> <img src="img/main_left_banner_review.jpg" alt=""></a></div>
+
+                <nav class="article">
+                    <ul>
+                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                        <li><a href="#">[종료] 가정의 달! 어버이 날, ...</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="slider-1 cell">
+                <div id="nivoSlider1">
+                    <a href="#"><img src="img/345d2dde319bb9b0f36313d25bb13700.jpg" alt="골드 라벨 컬렉션 선물세트" title="골드 라벨 컬렉션 선물세트"  /></a>
+                    <a href="#"><img src="img/e9d6c55f12a76028520e90352dd98ee1.jpg" alt="골드 라벨 컬렉션 500ml (10종)" title="골드 라벨 컬렉션 500ml (10종)"  /></a>
+                    <a href="#"><img src="img/ba3350d47a18a899085ae3913c597d88.jpg" alt="대용량 디퓨저 용 액세서리" title="대용량 디퓨저 용 액세서리"  /></a>
+                    <a href="#"><img src="img/ad6cdac71d824d3dc6f82f600ed06d1e.jpg" alt="블랙 라벨 컬렉션 120ml (8종)" title="블랙 라벨 컬렉션 120ml (8종)"  /></a>
+                    <a href="#"><img src="img/8d6df052219d5429c012a1d78339b7d2.jpg" alt="퀸즈 라벨 컬렉션 120ml (6종)" title="퀸즈 라벨 컬렉션 120ml (6종)"  /></a>
+                    <a href="#"> <img src="img/e6dc209cbe3ec398539c87827a0cdb5b.jpg" alt="프리미엄 아로마 컬렉션 90ml (8종)" title="프리미엄 아로마 컬렉션 90ml (8종)"  /></a>
+                    <a href="#"><img src="img/2e9a735e20f5c22a24e472405de36364.jpg" alt="미니 / 블랙 라벨 컬렉션 50ml (8종)" title="미니 / 블랙 라벨 컬렉션 50ml (8종)"  /></a>
+                    <a href="#"><img src="img/8ff6f11370368898ccc00ce3dd150a8d.jpg" alt="미니 / 퀸즈 라벨 컬렉션 50ml (6종)" title="미니 / 퀸즈 라벨 컬렉션 50ml (6종)"  /></a>
+                    <a href="#"><img src="img/e5b975791f6bd70e07b8998dd058855f.jpg" alt="미니 / 프리미엄 아로마 컬렉션 50ml (8종)" title="미니 / 프리미엄 아로마 컬렉션 50ml (8종)"  /></a>
+                    <a href="#"><img src="img/54c419c428bf7b88a7cbbedc3ed810d0.jpg" alt="차량용 / 블랙 라벨 컬렉션 50ml (8종)" title="차량용 / 블랙 라벨 컬렉션 50ml (8종)"  /></a>
+                    <a href="#"><img src="img/784f961538f43d0dd1a7488e9385e00e.jpg" alt="차량용 / 퀸즈 라벨 컬렉션 50ml (6종)" title="차량용 / 퀸즈 라벨 컬렉션 50ml (6종)"  /></a>
+                    <a href="#"> <img src="img/c607869ceae70f32c361920d8be94951.jpg" alt="차량용 / 프리미엄 아로마 컬렉션 50ml (8종)" title="차량용 / 프리미엄 아로마 컬렉션 50ml (8종)"  /></a>
+                    <a href="#"><img src="img/0e4180d5a20e251ec7d57cb57c632161.jpg" alt="비비엔느 디퓨저 선물세트" title="비비엔느 디퓨저 선물세트"  /></a>
+                </div>
+            </div>
+
+            <div class="right_bn cell">
+
+                <div class="img-box">
+                    <a href="#"><img src="img/main_right_banner01.jpg" alt=""></a></div>
+
+                <div class="right-slider ">check this</div>
+                <div class="carousel-1">
+                    <ul class="owl-carousel owl-theme">
+
+                        <li class="item">
+                            <a href="#"><img src="img/main_right_banner05.jpg" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="img/main_right_banner03.jpg" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="img/main_right_banner02_4.jpg" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="img/main_right_banner02_2.jpg" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="img/main_right_banner02_1.jpg" alt=""></a></li>
+                        <li class="item"><a href="#"><img src="img/main_right_banner02.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--best of best item-->
+        <div class="con row">
+            <div class="bob_item cell bob_item-hover">
+                <div class="bob_item-title relative">
+                    Best Of Best Item
+                </div>
+
+                <div class="bob_item-menu">
+                    <ul class="row">
+                        <li class="cell relative active"><a href="#">GIFT SET /<br>PACKAGE</a></li>
+                        <li class="cell relative"><a href="#">BIG SIZE<br>DDIFFUSER</a></li>
+                        <li class="cell relative"><a href="#">BEST SELLER<br>DIFFUSER</a></li>
+                        <li class="cell relative"><a href="#">CAR <br>DIFFUSER</a></li>
+                        <li class="cell relative"><a href="#">DIFFUSER <br>REFILL</a></li>
+                    </ul>
+                </div>
+                <div class="bob_item-prod text-align-center">
+                    <ul class="bob_item-list row active">
+                        <li class="list_box cell ">
+                            <div class="img-box"><a href="#"><img src="img/219_shop1_707646.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 카네이션 디퓨저 선물 세트 (3종) 120ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>1,390원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>38,800원</span></div>
+                                <div class="t_pay"><span>27,800원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/523_shop1_875890.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 블랙 스톤 카네이션 디퓨저 선물 세트 (6종) 250ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>2,420원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>48,400원</span></div>
+                                <div class="t_pay"><span>48,400원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box "><a href="#"><img src="img/524_shop1_474305.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 골드 라벨 카네이션 디퓨저 선물 세트 (10종) 500ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>3,750원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>101,000원</span></div>
+                                <div class="t_pay"><span>75,000원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/53_shop1_326793.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 블랙 라벨 선물 세트 (받침대 포함) </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>1,310원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="t_pay"><span>24,100원</span></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="bob_item-list row">
+                        <li class="list_box cell active">
+                            <div class="img-box"><a href="#"><img src="img/220_shop1_390224.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 골드 라벨 컬렉션 (10종) 500ml </a>
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>3,450원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>95,000원</span></div>
+                                <div class="t_pay"><span>69,000원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/497_shop1_194382.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 블랙 스톤 대용량 디퓨저 / 디퓨져 (6종) 250ml </a>
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>2,300원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>45,900원</span></div>
+                                <div class="t_pay"><span>45,900원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box "><a href="#"><img src="img/505_shop1_772913.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 리필 / 제이드 리프 티 250ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>1,750원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>35,000원</span></div>
+                                <div class="t_pay"><span>35,000원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/233_shop1_797294.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 리필용 / 대형 블랙 섬유 스틱 세트 (10P/1SET, 골드 라벨용) </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>1,750원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>5,000원</span></div>
+                                <div class="t_pay"><span>5,000원</span></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="bob_item-list row">
+                        <li class="list_box cell active">
+                            <div class="img-box"><a href="#"><img src="img/221_shop1_814864.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 라임 바질 앤 만다린 500ml </a>
+                                <img src="img/icon_201409242147247300.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>3,450원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>95,000원</span></div>
+                                <div class="t_pay"><span>69,00원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/30_shop1_788100.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 러브 어페어 120ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>900원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>26,900원</span></div>
+                                <div class="t_pay"><span>19,800원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box "><a href="#"><img src="img/69_shop1_791148.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 화이트 프리지아 120ml </a>
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>990원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>26,900원</span></div>
+                                <div class="t_pay"><span>19,800원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/22_shop1_479588.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 슈가 러시 90ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>750원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>19,800원</span></div>
+                                <div class="t_pay"><span>14,900원</span></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="bob_item-list row">
+                        <li class="list_box cell active">
+                            <div class="img-box"><a href="#"><img src="img/169_shop1_779558.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 블랙 라벨 선물 세트 </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>780원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="t_pay"><span>15,600원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/144_shop1_905574.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 클린 솝 50ml </a>
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>600원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>15,900원</span></div>
+                                <div class="t_pay"><span>11,900원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box "><a href="#"><img src="img/156_shop1_406271.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 그랑 블루 50ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/icon_201409242147247300.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>700원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>18,900원</span></div>
+                                <div class="t_pay"><span>13,900원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/161_shop1_435216.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 프렌치 라벤더 50ml </a>
+                                <img src="img/icon_201409242147247300.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>700원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>18,900원</span></div>
+                                <div class="t_pay"><span>13,900원</span></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="bob_item-list row">
+                        <li class="list_box cell active">
+                            <div class="img-box"><a href="#"><img src="img/505_shop1_772913.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 리필 / 모링가 250ml </a>
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>1,750원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>35,000원</span></div>
+                                <div class="t_pay"><span>35,000원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/241_shop1_391747.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 방향제 / 리필액 / 잉글리시 피어 앤 프리지아 500ml</a>
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>1,950원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>53,000원</span></div>
+                                <div class="t_pay"><span>39,00원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box "><a href="#"><img src="img/181_shop1_376495.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 시트러스 플로랄 210ml </a>
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>950원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>25,000원</span></div>
+                                <div class="t_pay"><span>18,900원</span></div>
+                            </div>
+                        </li>
+
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/184_shop1_342973.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 러브 어페어 210ml </a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>1,050원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>28,500원</span></div>
+                                <div class="t_pay"><span>20,900원</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--best of best fin-->
+
+            <!--best item -->
+            <div class="product cell">
+                <div class="produt-item-title relative">
+                    Best Product
+                </div>
+                <div class="product-item-list text-align-center">
+                    <ul class="product-item-list row ">
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/498_shop1_929416.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모닝 쥬시 250ml</a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/icon_201409242147247300.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>2,300원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>45,900원</span></div>
+                                <div class="t_pay"><span>45,900원</span></div>
+                            </div>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/221_shop1_814864.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모링가 500ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>3,450원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>95,000원</span></div>
+                                    <div class="t_pay"><span>69,000원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/30_shop1_788100.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 러브 어페어 120ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>990원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>26,900원</span></div>
+                                    <div class="t_pay"><span>19,800원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/66_shop1_274008.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 체리 블라썸 120ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>990원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>26,900원</span></div>
+                                    <div class="t_pay"><span>19,800원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/83_shop1_767422.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 레드 프룻 90ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>750원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>19,800원</span></div>
+                                    <div class="t_pay"><span>14,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/23_shop1_736583.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 클린 솝 90ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>750원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>19,800원</span></div>
+                                    <div class="t_pay"><span>14,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/146_shop1_484154.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 레드 프룻 50ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>600원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>15,900원</span></div>
+                                    <div class="t_pay"><span>11,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/157_shop1_945078.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 듀베리 플로랄 50ml </a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>700원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>18,900원</span></div>
+                                    <div class="t_pay"><span>13,900원</span></div>
+                                </div>
+                            </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!--new product-->
+            <div class="product cell">
+                <div class="produt-item-title relative">
+                    New Product
+                </div>
+                <div class="product-item-list text-align-center">
+                    <ul class="product-item-list row ">
+                        <li class="list_box cell">
+                            <div class="img-box"><a href="#"><img src="img/498_shop1_929416.jpg" alt=""></a></div>
+                            <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모닝 쥬시 250ml</a>
+                                <img src="img/icon_201409231353475200.gif" alt="">
+                                <img src="img/icon_201409242147247300.gif" alt="">
+                                <img src="img/custom_3.gif" alt="">
+                                <img src="img/custom_8.gif" alt="">
+                            </div>
+                            <div class="price">
+                                <div class="point"><span>2,300원 </span>
+                                    <span>(5%) </span>
+                                </div>
+                                <div class="f_pay"><span>45,900원</span></div>
+                                <div class="t_pay"><span>45,900원</span></div>
+                            </div>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/498_shop1_929416.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 모링가 250ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>2,300원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>45,900원</span></div>
+                                    <div class="t_pay"><span>45,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/517_shop1_303291.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 블랙 스톤 대용량 디퓨저 / 디퓨져 / 몬스테라, 대리석 받침대 선물 세트</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>1,970원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="t_pay"><span>54,500원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/504_shop1_347364.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 블랙 스톤 대용량 디퓨저 / 디퓨져 리필 (6종) 250ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>1,750원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>35,000원</span></div>
+                                    <div class="t_pay"><span>35,500원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/221_shop1_814864.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 라임 바질 앤 만다린 500ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>3,450원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>95,000원</span></div>
+                                    <div class="t_pay"><span>69,000원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/221_shop1_814864.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 바닐라 앤 코코넛 500ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>3,450원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>95,000원</span></div>
+                                    <div class="t_pay"><span>69,000원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/238_shop1_174889.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 골드 라벨 컬렉션 / 몬스테라 선물 세트</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>4,220원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="t_pay"><span>74,500원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/241_shop1_784889.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 대용량 디퓨저 / 디퓨져 / 방향제 / 리필액 / 골드 라벨 (10종) 500ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>1,950원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>53,000원</span></div>
+                                    <div class="t_pay"><span>39,000원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/143_shop1_377153.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 섹스 온 더 비치 50ml</a> <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>600원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>15,900원</span></div>
+                                    <div class="t_pay"><span>11,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/151_shop1_405424.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 러브 어페어 50ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>700원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>18,900원</span></div>
+                                    <div class="t_pay"><span>13,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/160_shop1_634912.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 그린 티 50ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>700원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>18,900원</span></div>
+                                    <div class="t_pay"><span>13,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/182_shop1_462483.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 프리미엄 아로마 (8종) 210ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>950원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>25,000원</span></div>
+                                    <div class="t_pay"><span>18,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/145_shop1_394259.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 레몬 유칼립투스 50ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>600원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>15,900원</span></div>
+                                    <div class="t_pay"><span>11,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/155_shop1_514847.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 화이트 머스크 50ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>700원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>18,900원</span></div>
+                                    <div class="t_pay"><span>13,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/161_shop1_435216.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 프렌치 라벤더 50ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>700원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>18,900원</span></div>
+                                    <div class="t_pay"><span>13,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/191_shop1_895464.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 블랙 라벨 (8종) 210ml</a>
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>1,050원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>28,500원</span></div>
+                                    <div class="t_pay"><span>20,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/148_shop1_754494.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 시트러스 플로랄 50ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>600원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>15,900원</span></div>
+                                    <div class="t_pay"><span>11,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/156_shop1_406271.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 그랑 블루 50ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/icon_201409242147247300.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>700원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>18,900원</span></div>
+                                    <div class="t_pay"><span>13,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/163_shop1_784560.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 차량용 / 자동차 / 방향제 / 디퓨저 / 디퓨져 / 플로랄 부케 50ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>700원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>18,900원</span></div>
+                                    <div class="t_pay"><span>13,900원</span></div>
+                                </div>
+                            </li>
+
+                            <li class="list_box cell ">
+                                <div class="img-box"><a href="#"><img src="img/198_shop1_834759.jpg" alt=""></a></div>
+                                <div class="prod_name relative"><a href="#">비비엔느 디퓨저 / 디퓨져 / 차량용 / 자동차 / 방향제 / 리필액 / 퀸즈 라벨 (6종) 210ml</a>
+                                    <img src="img/icon_201409231353475200.gif" alt="">
+                                    <img src="img/custom_3.gif" alt="">
+                                    <img src="img/custom_8.gif" alt="">
+                                </div>
+                                <div class="price">
+                                    <div class="point"><span>1,050원 </span>
+                                        <span>(5%) </span>
+                                    </div>
+                                    <div class="f_pay"><span>28,500원</span></div>
+                                    <div class="t_pay"><span>20,900원</span></div>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <!--new product fin-->
+        </div>
+        <!-- con row -->
+
+
+        <!--footer-->
+
+        <div class="footer con">
+            <div class="footer_banner con row">
+
+                <div class="bn01 cell relative">
+                    <ul>
+                        <li class="f_title">고객센터</li>
+                        <li class="tell">02-830-5523</li>
+                        <li class="f_desc"><span>상담시간:</span> 오전09~06시 (점심시간 12시 ~ 1시)<br> 토/일/공휴일은휴무이니Q＆A를 이용해주세요!</li>
+                    </ul>
+                </div>
+
+                <div class="bn02 cell relative">
+                    <ul>
+                        <li class="f_title">은행계좌 안내</li>
+                        <li class="bk-logo"><img src="img/bk-logo.jpg" alt=""></li>
+                        <li class="bk"><span>우리은행</span></li>
+                        <li class="bk_num">1005-882-235678</li>
+                        <li class="bk-acc"><span>예금주:</span>(주)비비엔느</li>
+                    </ul>
+                </div>
+
+                <div class="bn03 cell relative">
+                    <ul class="row">
+                        <li class="f_title">NOTICE</li>
+                        <li> <a href="#"><strong>·</strong>`18년 가정의 달 5월 어버이날, ...</a></li>
+
+
+                        <li> <a href="#"><strong>·</strong>비비엔느 골드 라벨 카네이션 디퓨저 ...</a></li>
+
+
+                        <li> <a href="#"><strong>·</strong>비비엔느 블랙 스톤 카네이션 디퓨저 ...</a></li>
+
+
+                        <li> <a href="#"><strong>·</strong>비비엔느 블랙 스톤 대용량 디퓨저 외 ...</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="bn04 cell relative">
+                   <ul>
+                    <li>
+                        <a href="#">
+
+                            <img src="img/dev.gif" onmouseover="this.src='img/dev_on.gif'" onmouseout="this.src='img/dev.gif'" alt="배송조회">
+                        </a>
+                    </li>
+                    </ul>
+                    
+                    <ul>
+                    <li>
+                        <a href="#">
+
+                            <img src="img/join.gif" onmouseover="this.src='img/join_on.gif'" onmouseout="this.src='img/join.gif'" alt="회원가입">
+                        </a>
+                    </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <!--footer_banner-->
+        <!--all footer-->
+
+        <div class="bottom_inner con">
+            <nav class="bottom_menu">
+                <ul class="row">
+                    <li class="cell"><a href="#">HOME</a></li>
+                    <li class="cell"><a href="#">COMPANY</a></li>
+                    <li class="cell"><a href="#">ARREEMENT</a></li>
+                    <li class="cell"><a href="#">PRIVCY</a></li>
+                    <li class="cell"><a href="#">GUIDE</a></li>
+                </ul>
+            </nav>
+
+            <div class="copyright row">
+                <div class="copy_logo  cell">
+                    <div class="img-box"><a href="#"><img src="img/f_logo.jpg" alt=""></a></div>
+                </div>
+                <nav class="copy cell">
+                    <ul>
+                        <li>상호명: <span>주식회사 비비엔느</span> 대표이사:김보성 대표전화: <span>02-830-5523</span> 사업자등록번호:119-86-90571</li>
+                        <li>통신판매업신고번호: 제2014-서울금천-0624호 개인전보관리책임자: 민기수 <a href="mailto:help@vivienne.kr"><span class="e-mail">(help@vivienne.kr)</span></a></li>
+                        <li>주소:(153-759)서울특별시 금천구가산디지털2로 123 월드메르디앙벤쳐센터2차 406호</li>
+                        <li>COPYRIGHT (c) 2014 <span>VIVIENNE CO. LTD</span>. All RIGHTS RESERVED.</li>
+                        <li>본 페이지에 사용된 이미지,사진,설명 등의 모든 컨텐츠의 저작권 및 소유권은 (주)비비엔느에 있으며, <br>무단으로 도용시 관련 법령에 의거 형사처벌 될 수 있읍니다.</li>
+                        <li class="copy_bn"><a href="#"><img src="img/f_list.gif" alt=""></a></li>
+                    </ul>
+                </nav>
+                <div class="info cell"><a href="#">[사업자정보확인]</a></div>
+                <div class="copy-right cell">
+                    <div class="img-box"><a href="#"><img src="img/ini.gif" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--all con-->
+
+    <!-- js -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
